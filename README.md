@@ -1,20 +1,8 @@
 # Field-Shift-NASA-Space-Apps-Decision-Support-Tool#
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Field Shift | NASA Space Apps Decision Support Tool</title>
-    ////////////////////////<link rel="stylesheet" href="style.css">
-    ///////////////////////<link rel="stylesheet" href="style2.css">
-    <script src="script.js" defer></script>
-    <style>
-        .input-row { display: flex; gap: 10px; margin-top: 5px; }
-    </style>
-</head>
+
 <body>
 
-    <header>
+<header>
         <div class="logo">🌿 Field Shift <span class="badge">NASA Data Powered</span></div>
         <nav>
             <a href="#tool">Explore Tool</a>
@@ -23,23 +11,22 @@
         </nav>
     </header>
         
-    <section class="hero">
+ <section class="hero">
         <div class="hero-badge">🚀 NASA International Space Apps Challenge Project</div>
         <h1>Field Shift: Adapting Farms with NASA Data</h1>
         <p>Empowering farmers with data-driven decision tools, utilizing NASA Earth observations (SMAP, ECOSTRESS, GPM) to model climate-resilient crop rotation strategies.</p>
     </section>
 
-    <div class="form-container" id="tool">
+<div class="form-container" id="tool">
         <h2>පාරිසරික දත්ත පෝරමය (Environmental Data Form)</h2>
 
-        <form action="process.php" method="POST">
+ <form action="process.php" method="POST">
             
-            <div class="form-group">
+<div class="form-group">
                 <label for="date">Date:</label>
                 <input type="date" id="date" name="date" required>
             </div>
-
-            <!-- Precipitation (mm) -->
+<!-- Precipitation (mm) -->
             <div class="form-group">
                 <label>Precipitation (mm):</label>
                 <div class="input-row">
@@ -48,8 +35,7 @@
                     <input type="number" step="0.1" id="rainfall_3" name="rainfall[]" placeholder="Value 3" required>
                 </div>
             </div>
-
-            <!-- Soil Moisture (%) -->
+ <!-- Soil Moisture (%) -->
             <div class="form-group">
                 <label>Soil Moisture (%):</label>
                 <div class="input-row">
@@ -58,8 +44,7 @@
                     <input type="number" step="0.1" id="soil_moisture_3" name="soil_moisture[]" min="0" max="100" placeholder="Value 3" required>
                 </div>
             </div>
-
-            <!-- Temperature (°C) -->
+ <!-- Temperature (°C) -->
             <div class="form-group">
                 <label>Temperature (°C):</label>
                 <div class="input-row">
@@ -69,7 +54,7 @@
                 </div>
             </div>
 
-            <div class="form-group">
+<div class="form-group">
                 <label for="vegetation">Vegetation Level:</label>
                 <select id="vegetation" name="vegetation" required>
                     <option value="">Select..</option>
@@ -80,7 +65,7 @@
                 </select>
             </div>
 
-            <div class="form-group">
+<div class="form-group">
                 <label for="water_availability">Water Availability:</label>
                 <select id="water_availability" name="water_availability" required>
                     <option value="">Select..</option>
@@ -90,7 +75,7 @@
                 </select>
             </div>
 
-            <button type="submit" name="calculate">Calculate Average & Submit</button>
+  <button type="submit" name="calculate">Calculate Average & Submit</button>
         </form>
     </div>
     
